@@ -74,6 +74,11 @@ plugins:
 watch:
   - data
   - main.py
+  - hooks.py
+
+# hooks.py adds each published project (data/projects/published.yml) to the nav.
+hooks:
+  - hooks.py
 
 markdown_extensions:
   - attr_list
