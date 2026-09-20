@@ -16,7 +16,7 @@ masters:
   - {name: "Eshan Kelkar", role: "MSc, directed studies", term: "Spring 2026", notes: ""}
   - {name: "Aditya Gourishetty", role: "MSc, directed studies", term: "Spring 2026", notes: ""}
  graduated:
-  - {name: "Nhat Nguyen", role: "MSc", term: "Spring 2025", notes: "*AutoPYara: A Python/Java Framework for automatic YARA rule generation using semi-supervised clustering.* Co-first author of [AutoPYara](https://botacin-s-lab.github.io/AutoPYaraPyPI/) (ACSAC 2026)."}
+  - {name: "Nhat Nguyen", role: "MSc", term: "Spring 2025", notes: "*AutoPYara: A Python/Java Framework for automatic YARA rule generation using semi-supervised clustering.* Paper: [AutoPYara](https://botacin-s-lab.github.io/AutoPYaraPyPI/) (ACSAC 2026)."}
  previous:
   - {name: "Bhavan Dondapati", role: "MSc, project-based", term: "Aug 2023 to Spring 2025", notes: "[When GANs meet LLMs](https://botacin-s-lab.github.io/publications/#2026) (TAISAP 2026)"}
   - {name: "Sidharth Anil", role: "MSc, project-based", term: "May 2023 to Jun 2024", notes: "[AutoPYara](https://botacin-s-lab.github.io/AutoPYaraPyPI/) (ACSAC 2026)"}
