@@ -1,5 +1,5 @@
 <div class="member-card" markdown>
-![Photo of Eden Garza](../assets/people/placeholder.svg){ .member-photo }
+![Photo of Eden Garza](../assets/people/eden-garza.jpg){ .member-photo }
 ### Eden Garza
 <span class="member-role">PhD student · since Fall 2024</span>
 
