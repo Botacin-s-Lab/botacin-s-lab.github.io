@@ -1,0 +1,95 @@
+site_name: Botacin's Lab
+site_description: Malware analysis, detection and hardware-assisted security research at Texas A&M University
+site_url: https://botacin-s-lab.github.io/
+repo_name: Botacin-s-Lab/botacin-s-lab.github.io
+repo_url: https://github.com/Botacin-s-Lab/botacin-s-lab.github.io
+edit_uri: edit/main/docs/
+
+docs_dir: docs
+
+nav:
+  - Home: index.md
+  - Members:
+      - members/index.md
+      - Master's students: members/masters.md
+      - Undergraduates: members/undergraduates.md
+      - Alumni & others: members/alumni.md
+  - Projects:
+      - projects/index.md
+      - Current projects: projects/current.md
+      - HPC Security: projects/hpc-security.md
+      - Published projects:
+          - projects/published/index.md
+          - AutoPYara: projects/published/autopyara.md
+  - Funding: funding/index.md
+  - Publications: publications/index.md
+  - Join us: join.md
+
+theme:
+  name: material
+  icon:
+    logo: material/radar
+    repo: fontawesome/brands/github
+  favicon: images/favicon.svg
+  font:
+    text: Inter
+    code: JetBrains Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.indexes
+    - navigation.tracking
+    - navigation.instant
+    - navigation.instant.progress
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.snippets:
+      # Member cards and per-student project blocks live in cards/ (outside
+      # docs/) so each person edits exactly one small file. A missing file
+      # fails the build instead of silently rendering nothing.
+      base_path: ["."]
+      check_paths: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+copyright: >
+  Botacin's Lab — Department of Computer Science &amp; Engineering, Texas A&amp;M University
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Botacin-s-Lab
+    - icon: fontawesome/solid/envelope
+      link: mailto:botacin@tamu.edu
