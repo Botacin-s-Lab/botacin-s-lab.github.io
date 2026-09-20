@@ -9,6 +9,7 @@ docs_dir: docs
 
 nav:
   - Home: index.md
+  - Members: members/index.md
   - Publications: publications/index.md
   - Projects:
       - projects/index.md
@@ -17,7 +18,6 @@ nav:
       - Published projects:
           - projects/published/index.md
           - AutoPYara: projects/published/autopyara.md
-  - Members: members/index.md
   - Funding: funding/index.md
   - News: news/index.md
   - Join us: join.md
@@ -65,7 +65,6 @@ extra_css:
 
 extra_javascript:
   - javascripts/members.js
-  - javascripts/paging.js
 
 markdown_extensions:
   - attr_list

@@ -8,9 +8,7 @@ title: Publications
 
 Papers with a lab member as an author (lab members in **bold**). Entries tagged *advised in Brazil* are from before Prof. Botacin joined Texas A&M. For his complete record, see [Google Scholar](https://scholar.google.com.br/citations?user=Y8JHVbcAAAAJ).
 
-<div class="paged" data-size="6" markdown>
-
-<!-- --8<-- [start:all] -->
+<!-- --8<-- [start:latest] -->
 <div class="pub-row" id="2026" markdown>
 <div class="pub-meta" markdown>
 <span class="pub-year">2026</span>
@@ -75,6 +73,7 @@ Papers with a lab member as an author (lab members in **bold**). Entries tagged 
 [publisher](https://link.springer.com/chapter/10.1007/978-3-031-97623-0_1){ .chip } [pdf](https://marcusbotacin.github.io/files/dimva_drift.pdf){ .chip }
 </div>
 </div>
+<!-- --8<-- [end:latest] -->
 <div class="pub-row" id="2021" markdown>
 <div class="pub-meta" markdown>
 <span class="pub-year">2021</span>
@@ -138,10 +137,6 @@ Marcus Botacin, **Lucas Galante**, Fabrício Ceschin, Paulo C. Santos, Luigi Car
 <div class="pub-links" markdown>
 [publisher](https://ieeexplore.ieee.org/document/9034972){ .chip }
 </div>
-</div>
-
-<!-- --8<-- [end:all] -->
-
 </div>
 
 !!! note "Adding a paper"
