@@ -21,6 +21,8 @@
   text: "Seyyed Ali Ayati's paper on acoustic side-channel attacks on noisy keyboards appears at USENIX WOOT 2025."
 - date: "2025-07"
   text: "*Towards Explainable Drift Detection and Early Retrain in ML-Based Malware Detection Pipelines* (Tripathi, Gomes, Botacin) appears at DIMVA 2025."
+- date: "2025-03-11"
+  text: "Texas A&M Engineering features Prof. Botacin's new $150,000 project to build a small, security-focused LLM that writes malware detection rules: [\"ChatGPT\" for Computer Security](https://engineering.tamu.edu/news/2025/02/chatgpt-for-computer-security.html)."
 - date: "2025 Spring"
   text: "Nhat Nguyen graduates with an MSc thesis on AutoPYara. Uros Stanic joins as a PhD student, and Giorgia di Pietro (Sapienza University of Rome) visits the lab."
 - date: "2024 Fall"
