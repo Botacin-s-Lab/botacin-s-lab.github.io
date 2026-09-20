@@ -5,24 +5,94 @@ hide:
   - toc
 ---
 
-<div class="hero" markdown>
+<div class="landing-hero" markdown>
+
+<span class="kicker">Texas A&amp;M University · Computer Science &amp; Engineering</span>
 
 ![Botacin's Lab](images/favicon.svg){ .hero-logo }
 
 # Botacin's Lab
 
-<p class="tagline">Malware analysis, detection and hardware-assisted security at Texas A&amp;M University</p>
+<p class="tagline">We study how malware works, how it evades defenses, and how to build detection that holds up in the real world.</p>
 
 [Meet the lab :material-arrow-right:](members/index.md){ .md-button .md-button--primary }
-[Projects](projects/index.md){ .md-button }
-[Publications](publications/index.md){ .md-button }
-[Join us](join.md){ .md-button }
+[Explore projects](projects/index.md){ .md-button }
+[Read our papers](publications/index.md){ .md-button }
+
+<div class="chip-row">
+<span>Malware analysis</span>
+<span>Antivirus</span>
+<span>Machine learning</span>
+<span>Hardware security</span>
+<span>Reverse engineering</span>
+</div>
+
+</div>
+
+<div class="stat-strip" markdown>
+
+<div markdown><span class="num">5</span><span class="label">PhD students</span></div>
+
+<div markdown><span class="num">NSF</span><span class="label">SaTC CORE grant, 2024 to 2027</span></div>
+
+<div markdown><span class="num">3</span><span class="label">open-source repos for AutoPYara</span></div>
+
+<div markdown><span class="num">2022</span><span class="label">at Texas A&amp;M since</span></div>
 
 </div>
 
 ## Who we are
 
-Botacin's Lab is a computer security research group in the Department of Computer Science & Engineering at Texas A&M University, led by [Prof. Marcus Botacin](#about-the-pi). We are [PhD, Master's and undergraduate students](members/index.md) who study how malware works, how it evades defenses, and how to build detection that holds up outside the lab.
+Botacin's Lab is a computer security research group led by [Prof. Marcus Botacin](#about-the-pi). We are [PhD, Master's and undergraduate students](members/index.md) working on malware analysis and detection, from large-scale studies of threats in the wild to detectors built into the CPU itself. We release our code and data so others can reproduce and build on our results.
+
+<div class="people-strip" markdown>
+[Seyyed Ali Ayati](members/index.md#phd-students)
+[Soumyajyoti Dutta](members/index.md#phd-students)
+[Eden Garza](members/index.md#phd-students)
+[Mabon Ninan](members/index.md#phd-students)
+[Uros Stanic](members/index.md#phd-students)
+[+ Master's and undergraduates](members/masters.md)
+</div>
+
+## What's new
+
+<div class="spotlight-grid" markdown>
+
+<div class="spotlight" markdown>
+<span class="eyebrow">Featured project</span>
+
+### AutoPYara
+
+Automatic YARA rule generation for whole malware families, accepted to **ACSAC 2026**. A Python package, Java backend, reproducibility artifact and open evaluation data.
+
+```bash
+pip install autopyara
+```
+
+[Project page :material-arrow-right:](projects/published/autopyara.md)
+</div>
+
+<div class="spotlight" markdown>
+<span class="eyebrow">Ongoing research</span>
+
+### HPC Security
+
+Can the performance counters already inside every CPU become the next generation of antivirus? Funded by **NSF Award #2327427**.
+
+[Project page :material-arrow-right:](projects/hpc-security.md)
+</div>
+
+<div class="spotlight" markdown>
+<span class="eyebrow">We're recruiting</span>
+
+### Join the lab
+
+Open positions for PhD, Master's and undergraduate researchers in malware analysis, detection and hardware security.
+
+[How to apply :material-arrow-right:](join.md)
+</div>
+
+</div>
 
 ## What we do
 
@@ -76,7 +146,7 @@ What each PhD student and the funded HPC project are working on.
 
 <div markdown>
 ### [:material-package-variant-closed: Published projects](projects/published/index.md)
-Code, data and papers you can use, starting with [AutoPYara](projects/published/autopyara.md).
+Code, data and papers you can use today.
 </div>
 
 <div markdown>

@@ -136,3 +136,182 @@
 .pub p {
   margin: 0.15rem 0;
 }
+
+/* Header call-to-action that replaces the GitHub repo widget. */
+.md-header__join {
+  display: inline-block;
+  padding: 0.3rem 0.9rem;
+  margin-left: 0.6rem;
+  border: 1px solid currentColor;
+  border-radius: 2rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: inherit;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+
+.md-header__join:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+/* ---- Landing page ---- */
+
+.landing-hero {
+  position: relative;
+  margin: 0.5rem 0 2rem;
+  padding: 3.2rem 1.5rem 2.6rem;
+  border-radius: 0.9rem;
+  text-align: center;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(63, 81, 181, 0.28), transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(0, 150, 136, 0.26), transparent 45%),
+    var(--md-code-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.landing-hero .kicker {
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--md-accent-fg-color);
+  margin-bottom: 0.6rem;
+}
+
+.landing-hero img.hero-logo {
+  width: 84px;
+  height: 84px;
+  display: block;
+  margin: 0 auto 0.6rem;
+}
+
+.landing-hero h1 {
+  margin: 0 0 0.6rem;
+  font-size: 2.8rem;
+  line-height: 1.1;
+  font-weight: 700;
+  color: var(--md-default-fg-color);
+}
+
+.landing-hero p.tagline {
+  max-width: 40rem;
+  margin: 0 auto 1.5rem;
+  font-size: 1.15rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.landing-hero .md-button {
+  margin: 0.2rem 0.3rem;
+}
+
+.chip-row {
+  margin-top: 1.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  justify-content: center;
+}
+
+.chip-row span {
+  font-size: 0.72rem;
+  padding: 0.15rem 0.7rem;
+  border-radius: 1rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  color: var(--md-default-fg-color--light);
+}
+
+/* Numbers strip under the hero. */
+.stat-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin: 0 0 2.4rem;
+}
+
+.stat-strip > div {
+  text-align: center;
+  padding: 0.9rem 0.5rem;
+  border-radius: 0.6rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.stat-strip .num {
+  display: block;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--md-primary-fg-color);
+  line-height: 1.2;
+}
+
+[data-md-color-scheme="slate"] .stat-strip .num {
+  color: var(--md-accent-fg-color);
+}
+
+.stat-strip .label {
+  font-size: 0.78rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.section-lead {
+  color: var(--md-default-fg-color--light);
+  max-width: 44rem;
+}
+
+/* Featured-project / recruiting spotlights. */
+.spotlight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.1rem;
+  margin: 1.2rem 0 2.2rem;
+}
+
+.spotlight {
+  padding: 1.3rem 1.4rem;
+  border-radius: 0.7rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-top: 3px solid var(--md-accent-fg-color);
+}
+
+.spotlight h3 {
+  margin-top: 0.2rem;
+}
+
+.spotlight .eyebrow {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--md-accent-fg-color);
+}
+
+.people-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.8rem 0 0;
+}
+
+.people-strip a {
+  padding: 0.25rem 0.8rem;
+  border-radius: 2rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  font-size: 0.82rem;
+}
+
+.people-strip a:hover {
+  border-color: var(--md-accent-fg-color);
+}
+
+@media (max-width: 40em) {
+  .landing-hero h1 { font-size: 2.1rem; }
+}
+
+/* Outlined buttons default to the (dark) primary colour, which is hard to
+   read on the dark scheme. */
+[data-md-color-scheme="slate"] .md-typeset .md-button:not(.md-button--primary) {
+  color: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
+}
