@@ -15,8 +15,24 @@ hide:
 
 <p class="hero-text">We study how malware works, how it evades defenses, and how to detect it. Our work spans large-scale analyses of threats in the wild, machine-learning detection and its limits, antivirus operations, and detectors built into the hardware itself.</p>
 
-[Read our work :material-arrow-right:](publications/index.md){ .md-button .md-button--primary }
+[Browse publications :material-arrow-down:](#publications){ .md-button .md-button--primary }
 [Meet the lab](members/index.md){ .md-button }
+
+</div>
+
+<div class="section-head first" markdown>
+<div markdown>
+<span class="mono-label">Research output</span>
+
+## Publications
+</div>
+
+[Full list :material-arrow-right:](publications/index.md){ .more }
+</div>
+
+<div class="paged" data-size="4" markdown>
+
+--8<-- "docs/publications/index.md:all"
 
 </div>
 
@@ -125,18 +141,6 @@ Formal definitions of malware, theories of maliciousness, evaluation metrics, ma
 </div>
 
 </div>
-
-<div class="section-head" markdown>
-<div markdown>
-<span class="mono-label">Recent</span>
-
-## Latest publications
-</div>
-
-[All publications :material-arrow-right:](publications/index.md){ .more }
-</div>
-
---8<-- "docs/publications/index.md:latest"
 
 <div class="section-head" markdown>
 <div markdown>

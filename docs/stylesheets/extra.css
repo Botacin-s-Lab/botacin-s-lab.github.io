@@ -75,7 +75,7 @@
 .lab-hero {
   position: relative;
   text-align: center;
-  padding: 3.4rem 1rem 2.6rem;
+  padding: 2.6rem 1rem 1.6rem;
 }
 
 .lab-hero h1 {
@@ -394,4 +394,58 @@
   .pi-block { grid-template-columns: 1fr; }
   .area-grid { grid-template-columns: 1fr; }
   .news-row { grid-template-columns: 1fr; gap: 0.2rem; }
+}
+
+/* ---- Paged lists ---- */
+.pub-row[hidden],
+.news-row[hidden] {
+  display: none;
+}
+
+.pager {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 1.2rem 0 0;
+}
+
+.pager button {
+  min-width: 2rem;
+  padding: 0.25rem 0.7rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 0.25rem;
+  background: transparent;
+  color: var(--md-default-fg-color);
+  font-family: var(--lab-mono);
+  font-size: 0.72rem;
+  cursor: pointer;
+}
+
+.pager button:hover:not(:disabled) {
+  border-color: var(--md-accent-fg-color);
+  color: var(--md-accent-fg-color);
+}
+
+.pager button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.pager button.current {
+  background: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
+  color: var(--md-accent-bg-color);
+}
+
+.pager-info {
+  margin-left: auto;
+  font-family: var(--lab-mono);
+  font-size: 0.68rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* Publications directly under the hero: less space above the first heading. */
+.section-head.first {
+  margin-top: 1.4rem;
 }
