@@ -78,22 +78,6 @@
   padding: 3.4rem 1rem 2.6rem;
 }
 
-/* Faint grid behind the hero, faded out towards the bottom. It lives on a
-   pseudo-element so the mask does not fade the text and buttons. */
-.lab-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background-image:
-    linear-gradient(var(--lab-rule) 1px, transparent 1px),
-    linear-gradient(90deg, var(--lab-rule) 1px, transparent 1px);
-  background-size: 44px 44px;
-  background-position: center top;
-  -webkit-mask-image: linear-gradient(to bottom, #000 40%, transparent);
-  mask-image: linear-gradient(to bottom, #000 40%, transparent);
-}
-
 .lab-hero h1 {
   margin: 0 0 0.4rem;
   font-size: 3.4rem;
@@ -134,37 +118,6 @@
 
 .info-row .mono-label {
   margin-bottom: 0.2rem;
-}
-
-/* ---- Numbers row ---- */
-.stat-row {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin-top: 2rem;
-  border-bottom: 1px solid var(--lab-rule);
-}
-
-.stat-row > div {
-  padding: 1.1rem 1.2rem 1.2rem;
-  border-left: 1px solid var(--lab-rule);
-}
-
-.stat-row > div:first-child {
-  border-left: 0;
-  padding-left: 0;
-}
-
-.stat-num {
-  display: block;
-  font-size: 2.3rem;
-  line-height: 1.1;
-  font-weight: 600;
-}
-
-.stat-label {
-  display: block;
-  font-size: 0.82rem;
-  margin: 0.15rem 0 0.25rem;
 }
 
 /* ---- Principal investigator block ---- */
@@ -430,9 +383,7 @@
 
 /* ---- Narrow screens ---- */
 @media (max-width: 60em) {
-  .info-row,
-  .stat-row { grid-template-columns: repeat(2, 1fr); }
-  .stat-row > div:nth-child(3) { border-left: 0; padding-left: 0; }
+  .info-row { grid-template-columns: repeat(2, 1fr); }
   .area-grid { grid-template-columns: repeat(2, 1fr); }
   .pub-row { grid-template-columns: 90px 1fr; }
   .pub-links { grid-column: 2; justify-content: flex-start; max-width: none; }

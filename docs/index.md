@@ -44,34 +44,6 @@ Texas A&amp;M University
 
 </div>
 
-<div class="stat-row" markdown>
-
-<div markdown>
-<span class="stat-num">5</span>
-<span class="stat-label">PhD students</span>
-<span class="mono-label">current</span>
-</div>
-
-<div markdown>
-<span class="stat-num">6</span>
-<span class="stat-label">Master's students</span>
-<span class="mono-label">current</span>
-</div>
-
-<div markdown>
-<span class="stat-num">8</span>
-<span class="stat-label">Papers with lab members</span>
-<span class="mono-label">since 2019</span>
-</div>
-
-<div markdown>
-<span class="stat-num">1</span>
-<span class="stat-label">NSF grant</span>
-<span class="mono-label">2024 to 2027</span>
-</div>
-
-</div>
-
 <div class="section-head" markdown>
 <div markdown>
 <span class="mono-label">Principal investigator</span>
