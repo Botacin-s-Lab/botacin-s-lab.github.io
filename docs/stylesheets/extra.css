@@ -1,34 +1,402 @@
-/* Hero block on the homepage. Theme-aware: no hardcoded backgrounds that
-   would fight light/dark mode. */
-.hero {
-  text-align: center;
-  padding: 2.4rem 1rem 1.6rem;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+/* Botacin's Lab: layout components.
+   Palette comes from the Material theme (indigo/teal, light and dark), so
+   everything below uses theme variables and works in both schemes. */
+
+:root {
+  --lab-rule: var(--md-default-fg-color--lightest);
+  --lab-mono: var(--md-code-font-family, "JetBrains Mono", monospace);
 }
 
-.hero img.hero-logo {
-  width: 72px;
-  height: 72px;
-  margin-bottom: 0.75rem;
+.md-typeset pre > code,
+.md-typeset .admonition {
+  border-radius: 0.4rem;
 }
 
-.hero h1 {
-  margin: 0 0 0.4rem;
-  font-size: 2.2rem;
-}
-
-.hero p.tagline {
-  font-size: 1.15rem;
+/* Small uppercase monospace label used above headings and inside cells. */
+.mono-label {
+  display: block;
+  font-family: var(--lab-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
   color: var(--md-default-fg-color--light);
-  margin: 0 0 1.4rem;
 }
 
-.hero .md-button {
-  margin: 0.2rem 0.35rem;
+/* Section header: label, title, hairline, optional "see all" link on the right. */
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+  margin: 3.2rem 0 0.4rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--lab-rule);
 }
 
-/* Auto-fit card grid used for research areas, project cards, etc. */
+.section-head h2 {
+  margin: 0.2rem 0 0;
+}
+
+.section-head .more {
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.md-typeset .mono-label + h1 {
+  margin-top: 0.2rem;
+}
+
+/* ---- Header call-to-action (replaces the GitHub repo widget) ---- */
+.md-header__join {
+  display: inline-block;
+  padding: 0.3rem 0.9rem;
+  margin-left: 0.6rem;
+  border: 1px solid currentColor;
+  border-radius: 2rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: inherit;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+
+.md-header__join:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+/* Outlined buttons default to the (dark) primary colour, hard to read on
+   the dark scheme. */
+[data-md-color-scheme="slate"] .md-typeset .md-button:not(.md-button--primary) {
+  color: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
+}
+
+/* ---- Landing hero ---- */
+.lab-hero {
+  position: relative;
+  text-align: center;
+  padding: 3.4rem 1rem 2.6rem;
+}
+
+/* Faint grid behind the hero, faded out towards the bottom. It lives on a
+   pseudo-element so the mask does not fade the text and buttons. */
+.lab-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    linear-gradient(var(--lab-rule) 1px, transparent 1px),
+    linear-gradient(90deg, var(--lab-rule) 1px, transparent 1px);
+  background-size: 44px 44px;
+  background-position: center top;
+  -webkit-mask-image: linear-gradient(to bottom, #000 40%, transparent);
+  mask-image: linear-gradient(to bottom, #000 40%, transparent);
+}
+
+.lab-hero img.hero-logo {
+  width: 64px;
+  height: 64px;
+  display: block;
+  margin: 0 auto 0.6rem;
+}
+
+.lab-hero h1 {
+  margin: 0 0 0.4rem;
+  font-size: 3.4rem;
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--md-default-fg-color);
+}
+
+.lab-hero .hero-headline {
+  margin: 1.6rem auto 0.4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--md-default-fg-color);
+}
+
+.lab-hero .hero-text {
+  max-width: 40rem;
+  margin: 0.4rem auto 1.5rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.lab-hero .md-button {
+  margin: 0.2rem 0.3rem;
+}
+
+/* ---- Key facts row ---- */
+.info-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+  padding: 1.2rem 0;
+  border-top: 1px solid var(--lab-rule);
+  border-bottom: 1px solid var(--lab-rule);
+  font-size: 0.85rem;
+}
+
+.info-row .mono-label {
+  margin-bottom: 0.2rem;
+}
+
+/* ---- Numbers row ---- */
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 2rem;
+  border-bottom: 1px solid var(--lab-rule);
+}
+
+.stat-row > div {
+  padding: 1.1rem 1.2rem 1.2rem;
+  border-left: 1px solid var(--lab-rule);
+}
+
+.stat-row > div:first-child {
+  border-left: 0;
+  padding-left: 0;
+}
+
+.stat-num {
+  display: block;
+  font-size: 2.3rem;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.82rem;
+  margin: 0.15rem 0 0.25rem;
+}
+
+/* ---- Principal investigator block ---- */
+.pi-block {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  gap: 2.2rem;
+  margin: 1.6rem 0 0;
+}
+
+.pi-block img.pi-photo {
+  width: 210px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 0.25rem;
+  display: block;
+}
+
+.pi-block .link-row {
+  margin-top: 0.7rem;
+  font-family: var(--lab-mono);
+  font-size: 0.68rem;
+  line-height: 1.9;
+}
+
+.pi-block h3 {
+  margin: 0;
+}
+
+.pi-block .pi-main .mono-label {
+  margin-bottom: 1rem;
+}
+
+/* ---- Research areas ---- */
+.area-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 1.4rem 0 0;
+  border-top: 1px solid var(--lab-rule);
+  border-left: 1px solid var(--lab-rule);
+}
+
+.area-grid > div {
+  padding: 1.1rem 1.2rem 1.3rem;
+  border-right: 1px solid var(--lab-rule);
+  border-bottom: 1px solid var(--lab-rule);
+  font-size: 0.85rem;
+}
+
+.area-grid h3 {
+  margin: 0.3rem 0 0.4rem;
+  font-size: 1.02rem;
+}
+
+.area-grid p {
+  margin: 0;
+}
+
+/* ---- Publication rows ---- */
+.pub-row {
+  display: grid;
+  grid-template-columns: 120px 1fr auto;
+  gap: 1.4rem;
+  padding: 1.15rem 0;
+  border-bottom: 1px solid var(--lab-rule);
+}
+
+.pub-year {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.pub-main p {
+  margin: 0.15rem 0;
+}
+
+.pub-main p:first-child {
+  margin-top: 0;
+  line-height: 1.35;
+}
+
+.pub-main p:nth-child(2) {
+  font-size: 0.78rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.tag {
+  display: inline-block;
+  margin: 0.25rem 0.4rem 0 0;
+  font-family: var(--lab-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--md-default-fg-color--light);
+}
+
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-content: flex-start;
+  justify-content: flex-end;
+  max-width: 13rem;
+}
+
+.pub-links p {
+  margin: 0;
+}
+
+.md-typeset a.chip {
+  display: inline-block;
+  padding: 0 0.5rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 0.2rem;
+  font-family: var(--lab-mono);
+  font-size: 0.66rem;
+  line-height: 1.7;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset a.chip:hover {
+  border-color: var(--md-accent-fg-color);
+  color: var(--md-accent-fg-color);
+}
+
+/* ---- News rows ---- */
+.news-row {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 1.4rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--lab-rule);
+  font-size: 0.88rem;
+}
+
+.news-row p {
+  margin: 0;
+}
+
+.news-date {
+  font-family: var(--lab-mono);
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--light);
+  padding-top: 0.1rem;
+}
+
+/* ---- Members ---- */
+.member-search {
+  width: 100%;
+  max-width: 22rem;
+  margin: 0.4rem 0 1rem;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--lab-rule);
+  border-radius: 0.3rem;
+  background: transparent;
+  color: var(--md-default-fg-color);
+  font-family: var(--lab-mono);
+  font-size: 0.78rem;
+}
+
+.md-typeset h2 .count {
+  margin-left: 0.6rem;
+  font-family: var(--lab-mono);
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--md-default-fg-color--light);
+  vertical-align: middle;
+}
+
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.4rem;
+  margin: 1.2rem 0 2rem;
+}
+
+.member-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.member-card img.member-photo {
+  width: 100%;
+  max-width: 200px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 0.25rem;
+  margin: 0 0 0.4rem;
+}
+
+.member-card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.member-card p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.member-card .member-role,
+.pi-block .member-role {
+  font-family: var(--lab-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--md-default-fg-color--light);
+}
+
+.member-card .member-links {
+  margin-top: 0.3rem;
+  font-size: 0.72rem;
+}
+
+/* Links still pointing at "#" (placeholders for the student to fill in) are
+   dimmed and inert. */
+.member-card .member-links a[href="#"],
+.project-slot a[href="#"] {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* ---- Projects ---- */
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -37,8 +405,8 @@
 }
 
 .feature-grid > div {
-  border: 1px solid var(--md-default-fg-color--lightest);
-  border-radius: 0.5rem;
+  border: 1px solid var(--lab-rule);
+  border-radius: 0.4rem;
   padding: 1rem 1.1rem;
 }
 
@@ -47,66 +415,6 @@
   font-size: 1.05rem;
 }
 
-.md-typeset pre > code,
-.md-typeset .admonition {
-  border-radius: 0.4rem;
-}
-
-/* Member cards (PhD and visiting PhD students). One card per file in
-   cards/phd/. */
-.member-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 1.1rem;
-  margin: 1.2rem 0 2rem;
-}
-
-.member-card {
-  border: 1px solid var(--md-default-fg-color--lightest);
-  border-radius: 0.6rem;
-  padding: 1.1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-}
-
-.member-card img.member-photo {
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin: 0 0 0.4rem;
-}
-
-.member-card h3 {
-  margin: 0;
-  font-size: 1.1rem;
-}
-
-.member-card p {
-  margin: 0;
-}
-
-.member-card .member-role {
-  color: var(--md-default-fg-color--light);
-  font-size: 0.85rem;
-}
-
-.member-card .member-links {
-  margin-top: auto;
-  padding-top: 0.6rem;
-  font-size: 0.85rem;
-}
-
-/* Links that still point at "#" (a placeholder waiting for the student to
-   fill in their real URL) are dimmed and inert. */
-.member-card .member-links a[href="#"],
-.project-slot a[href="#"] {
-  opacity: 0.4;
-  pointer-events: none;
-}
-
-/* Per-student "current project" slot on the Current projects page. */
 .project-slot {
   border-left: 3px solid var(--md-accent-fg-color);
   padding: 0.1rem 0 0.1rem 1rem;
@@ -127,227 +435,19 @@
   vertical-align: middle;
 }
 
-/* Publication entries: one block per paper, quiet separator between them. */
-.pub {
-  padding: 0.7rem 0;
-  border-bottom: 1px solid var(--md-default-fg-color--lightest);
-}
-
-.pub p {
-  margin: 0.15rem 0;
-}
-
-/* Header call-to-action that replaces the GitHub repo widget. */
-.md-header__join {
-  display: inline-block;
-  padding: 0.3rem 0.9rem;
-  margin-left: 0.6rem;
-  border: 1px solid currentColor;
-  border-radius: 2rem;
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: inherit;
-  white-space: nowrap;
-  transition: background 0.15s;
-}
-
-.md-header__join:hover {
-  background: rgba(255, 255, 255, 0.16);
-}
-
-/* ---- Landing page ---- */
-
-.landing-hero {
-  position: relative;
-  margin: 0.5rem 0 2rem;
-  padding: 3.2rem 1.5rem 2.6rem;
-  border-radius: 0.9rem;
-  text-align: center;
-  overflow: hidden;
-  background:
-    radial-gradient(circle at 15% 20%, rgba(63, 81, 181, 0.28), transparent 45%),
-    radial-gradient(circle at 85% 80%, rgba(0, 150, 136, 0.26), transparent 45%),
-    var(--md-code-bg-color);
-  border: 1px solid var(--md-default-fg-color--lightest);
-}
-
-.landing-hero .kicker {
-  display: inline-block;
-  font-size: 0.75rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: var(--md-accent-fg-color);
-  margin-bottom: 0.6rem;
-}
-
-.landing-hero img.hero-logo {
-  width: 84px;
-  height: 84px;
-  display: block;
-  margin: 0 auto 0.6rem;
-}
-
-.landing-hero h1 {
-  margin: 0 0 0.6rem;
-  font-size: 2.8rem;
-  line-height: 1.1;
-  font-weight: 700;
-  color: var(--md-default-fg-color);
-}
-
-.landing-hero p.tagline {
-  max-width: 40rem;
-  margin: 0 auto 1.5rem;
-  font-size: 1.15rem;
-  color: var(--md-default-fg-color--light);
-}
-
-.landing-hero .md-button {
-  margin: 0.2rem 0.3rem;
-}
-
-.chip-row {
-  margin-top: 1.4rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-  justify-content: center;
-}
-
-.chip-row span {
-  font-size: 0.72rem;
-  padding: 0.15rem 0.7rem;
-  border-radius: 1rem;
-  border: 1px solid var(--md-default-fg-color--lighter);
-  color: var(--md-default-fg-color--light);
-}
-
-/* Numbers strip under the hero. */
-.stat-strip {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
-  margin: 0 0 2.4rem;
-}
-
-.stat-strip > div {
-  text-align: center;
-  padding: 0.9rem 0.5rem;
-  border-radius: 0.6rem;
-  border: 1px solid var(--md-default-fg-color--lightest);
-}
-
-.stat-strip .num {
-  display: block;
-  font-size: 1.7rem;
-  font-weight: 700;
-  color: var(--md-primary-fg-color);
-  line-height: 1.2;
-}
-
-[data-md-color-scheme="slate"] .stat-strip .num {
-  color: var(--md-accent-fg-color);
-}
-
-.stat-strip .label {
-  font-size: 0.78rem;
-  color: var(--md-default-fg-color--light);
-}
-
-.section-lead {
-  color: var(--md-default-fg-color--light);
-  max-width: 44rem;
-}
-
-/* Featured-project / recruiting spotlights. */
-.spotlight-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.1rem;
-  margin: 1.2rem 0 2.2rem;
-}
-
-.spotlight {
-  padding: 1.3rem 1.4rem;
-  border-radius: 0.7rem;
-  border: 1px solid var(--md-default-fg-color--lightest);
-  border-top: 3px solid var(--md-accent-fg-color);
-}
-
-.spotlight h3 {
-  margin-top: 0.2rem;
-}
-
-.spotlight .eyebrow {
-  font-size: 0.7rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: var(--md-accent-fg-color);
-}
-
-.people-strip {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin: 0.8rem 0 0;
-}
-
-.people-strip a {
-  padding: 0.25rem 0.8rem;
-  border-radius: 2rem;
-  border: 1px solid var(--md-default-fg-color--lightest);
-  font-size: 0.82rem;
-}
-
-.people-strip a:hover {
-  border-color: var(--md-accent-fg-color);
-}
-
-@media (max-width: 40em) {
-  .landing-hero h1 { font-size: 2.1rem; }
-}
-
-/* Outlined buttons default to the (dark) primary colour, which is hard to
-   read on the dark scheme. */
-[data-md-color-scheme="slate"] .md-typeset .md-button:not(.md-button--primary) {
-  color: var(--md-accent-fg-color);
-  border-color: var(--md-accent-fg-color);
-}
-
-/* "About the PI" block on the landing page. */
-.pi-card {
-  display: grid;
-  grid-template-columns: 180px 1fr;
-  gap: 1.6rem;
-  align-items: start;
-  padding: 1.4rem;
-  margin: 1rem 0 1.5rem;
-  border: 1px solid var(--md-default-fg-color--lightest);
-  border-radius: 0.8rem;
-}
-
-.pi-card .pi-photo img {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.pi-card h3 {
-  margin-top: 0;
-}
-
-@media (max-width: 40em) {
-  .pi-card { grid-template-columns: 1fr; justify-items: center; text-align: center; }
-}
-
-/* Three even columns (two rows of three) on wide screens. */
-.feature-grid.cols-3 {
-  grid-template-columns: repeat(3, 1fr);
-}
-
+/* ---- Narrow screens ---- */
 @media (max-width: 60em) {
-  .feature-grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+  .info-row,
+  .stat-row { grid-template-columns: repeat(2, 1fr); }
+  .stat-row > div:nth-child(3) { border-left: 0; padding-left: 0; }
+  .area-grid { grid-template-columns: repeat(2, 1fr); }
+  .pub-row { grid-template-columns: 90px 1fr; }
+  .pub-links { grid-column: 2; justify-content: flex-start; max-width: none; }
+}
+
+@media (max-width: 40em) {
+  .lab-hero h1 { font-size: 2.4rem; }
+  .pi-block { grid-template-columns: 1fr; }
+  .area-grid { grid-template-columns: 1fr; }
+  .news-row { grid-template-columns: 1fr; gap: 0.2rem; }
 }

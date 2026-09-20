@@ -9,11 +9,8 @@ docs_dir: docs
 
 nav:
   - Home: index.md
-  - Members:
-      - members/index.md
-      - Master's students: members/masters.md
-      - Undergraduates: members/undergraduates.md
-      - Alumni & others: members/alumni.md
+  - Members: members/index.md
+  - Publications: publications/index.md
   - Projects:
       - projects/index.md
       - Current projects: projects/current.md
@@ -22,7 +19,7 @@ nav:
           - projects/published/index.md
           - AutoPYara: projects/published/autopyara.md
   - Funding: funding/index.md
-  - Publications: publications/index.md
+  - News: news/index.md
   - Join us: join.md
 
 theme:
@@ -66,6 +63,9 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/members.js
+
 markdown_extensions:
   - attr_list
   - md_in_html
@@ -86,7 +86,8 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 copyright: >
-  Botacin's Lab — Department of Computer Science &amp; Engineering, Texas A&amp;M University
+  Botacin's Lab · Department of Computer Science &amp; Engineering, Texas A&amp;M University ·
+  <a href="mailto:botacin@tamu.edu">botacin@tamu.edu</a>
 
 extra:
   social:
