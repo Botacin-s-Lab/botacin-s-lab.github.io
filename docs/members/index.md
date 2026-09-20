@@ -8,8 +8,6 @@ title: Members
 
 We are a group of PhD, Master's and undergraduate researchers working on malware analysis and detection, led by Prof. Marcus Botacin.
 
-<input type="search" id="member-search" class="member-search" placeholder="Search members…" aria-label="Search members">
-
 ## Principal investigator
 
 <div class="member-grid" markdown>

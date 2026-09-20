@@ -1,12 +1,9 @@
-/* Members page: live search box and per-section counts.
+/* Members page: adds an entry count next to each section heading.
    Material's instant navigation swaps page content without a reload, so this
    runs on every navigation through the document$ observable. */
 document$.subscribe(function () {
-  var input = document.getElementById("member-search");
-  if (!input) return;
-
   var article = document.querySelector(".md-content__inner");
-  var rows = article.querySelectorAll(".member-card, tbody tr");
+  if (!article || !document.querySelector(".member-grid")) return;
 
   // Count entries under each level-2 heading (cards plus table rows).
   article.querySelectorAll("h2").forEach(function (h) {
@@ -20,12 +17,5 @@ document$.subscribe(function () {
     s.className = "count";
     s.textContent = String(n).padStart(2, "0");
     h.appendChild(s);
-  });
-
-  input.addEventListener("input", function () {
-    var q = input.value.trim().toLowerCase();
-    rows.forEach(function (r) {
-      r.hidden = q !== "" && r.textContent.toLowerCase().indexOf(q) === -1;
-    });
   });
 });

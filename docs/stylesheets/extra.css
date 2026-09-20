@@ -266,19 +266,6 @@
 }
 
 /* ---- Members ---- */
-.member-search {
-  width: 100%;
-  max-width: 22rem;
-  margin: 0.4rem 0 1rem;
-  padding: 0.6rem 0.8rem;
-  border: 1px solid var(--lab-rule);
-  border-radius: 0.3rem;
-  background: transparent;
-  color: var(--md-default-fg-color);
-  font-family: var(--lab-mono);
-  font-size: 0.78rem;
-}
-
 .md-typeset h2 .count {
   margin-left: 0.6rem;
   font-family: var(--lab-mono);
