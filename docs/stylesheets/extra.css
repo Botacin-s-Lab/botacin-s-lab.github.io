@@ -94,13 +94,6 @@
   mask-image: linear-gradient(to bottom, #000 40%, transparent);
 }
 
-.lab-hero img.hero-logo {
-  width: 64px;
-  height: 64px;
-  display: block;
-  margin: 0 auto 0.6rem;
-}
-
 .lab-hero h1 {
   margin: 0 0 0.4rem;
   font-size: 3.4rem;

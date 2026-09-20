@@ -7,8 +7,6 @@ hide:
 
 <div class="lab-hero" markdown>
 
-![Botacin's Lab](images/favicon.svg){ .hero-logo }
-
 # Botacin's Lab
 
 <span class="mono-label">Malware analysis &amp; detection · Texas A&amp;M University</span>
