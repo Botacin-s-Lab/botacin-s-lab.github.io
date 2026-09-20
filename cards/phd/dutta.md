@@ -3,9 +3,9 @@
 ### Soumyajyoti Dutta
 <span class="member-role">PhD student · since 2024</span>
 
-Joined the lab as a project-based MSc student in 2023 and continued into the PhD. Co-author of AutoPYara. <!-- TODO(student): add bio, photo, links -->
+LLM post-training and evaluation, agentic and RAG systems, and applied ML for cyberdefense, including automated threat-detection rule generation.
 
 <div class="member-links" markdown>
-[:material-web: Website](#) · [:fontawesome-brands-github: GitHub](#) · [:material-school: Scholar](#)
+[:material-web: Website](https://xoumyax.github.io/) · [:fontawesome-brands-github: GitHub](https://github.com/xoumyax) · [:fontawesome-brands-linkedin: LinkedIn](https://www.linkedin.com/in/soumyajyotidutta/)
 </div>
 </div>
