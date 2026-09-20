@@ -71,14 +71,14 @@ Terms are as recorded by the lab in September 2026.
 
 | Name | Degree | Thesis / papers |
 |---|---|---|
-| Nhat Nguyen | MSc, Spring 2025 | *AutoPYara: A Python/Java Framework for automatic YARA rule generation using semi-supervised clustering.* Co-first author of [AutoPYara](../projects/published/autopyara.md) (ACSAC 2026). |
+| Nhat Nguyen | MSc, Spring 2025 | *AutoPYara: A Python/Java Framework for automatic YARA rule generation using semi-supervised clustering.* Co-first author of [AutoPYara](https://botacin-s-lab.github.io/AutoPYaraPyPI/) (ACSAC 2026). |
 
 ### Previously advised
 
 | Name | Program | Term | Papers |
 |---|---|---|---|
 | Bhavan Dondapati | MSc, project-based | Aug 2023 to Spring 2025 | [When GANs meet LLMs](../publications/index.md#2026) (TAISAP 2026) |
-| Sidharth Anil | MSc, project-based | May 2023 to Jun 2024 | [AutoPYara](../projects/published/autopyara.md) (ACSAC 2026) |
+| Sidharth Anil | MSc, project-based | May 2023 to Jun 2024 | [AutoPYara](https://botacin-s-lab.github.io/AutoPYaraPyPI/) (ACSAC 2026) |
 | Akshat Punjabi | MSc, project-based | Oct 2023 to May 2025 | |
 | Manoj Reddy Gurram | MSc, project-based | Aug 2023 to Spring 2025 | |
 | Richa Sharma | MSc, research alumni | Spring 2025 to Fall 2025 | |

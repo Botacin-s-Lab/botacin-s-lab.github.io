@@ -22,7 +22,7 @@ Papers with a lab member as an author (lab members in **bold**). Entries tagged 
 <span class="tag">YARA</span><span class="tag">clustering</span>
 </div>
 <div class="pub-links" markdown>
-[project](https://botacin-s-lab.github.io/projects/published/autopyara/){ .chip } [code](https://github.com/Botacin-s-Lab/AutoPYara){ .chip } [data](https://doi.org/10.5281/zenodo.22665898){ .chip }
+[docs](https://botacin-s-lab.github.io/AutoPYaraPyPI/){ .chip } [code](https://github.com/Botacin-s-Lab/AutoPYara){ .chip } [data](https://doi.org/10.5281/zenodo.22665898){ .chip }
 </div>
 </div>
 <div class="pub-row" markdown>

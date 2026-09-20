@@ -17,7 +17,7 @@ nav:
       - HPC Security: projects/hpc-security.md
       - Published projects:
           - projects/published/index.md
-          - AutoPYara: projects/published/autopyara.md
+          - AutoPYara: https://botacin-s-lab.github.io/AutoPYaraPyPI/
   - Funding: funding/index.md
   - News: news/index.md
   - Join us: join.md

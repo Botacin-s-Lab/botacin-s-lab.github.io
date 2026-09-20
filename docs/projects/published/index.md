@@ -10,12 +10,12 @@ Projects with public code, data and a paper. Each has its own page that links ev
 
 <div markdown>
 ### :material-radar: AutoPYara
-Automatic YARA rule generation for whole malware families. Python package, Java backend, reproducibility artifact and evaluation data.
+Automatic YARA rule generation for whole malware families. Opens the AutoPYara documentation site, which links the Python package, Java backend, artifact and evaluation data.
 
-[AutoPYara :material-arrow-right:](autopyara.md)
+[AutoPYara :material-arrow-right:](https://botacin-s-lab.github.io/AutoPYaraPyPI/)
 </div>
 
 </div>
 
 !!! note "Publishing a project"
-    Copy [`autopyara.md`](autopyara.md) as a template, add it to `nav` in `mkdocs.yml`, and add a card above.
+    Add a card above that links to the project's own site or repository, and add the same link to the Published projects entry in `nav` in `mkdocs.yml`.

@@ -25,7 +25,7 @@ CI (`.github/workflows/docs.yml`) builds and deploys on pushes to `main` that to
 
 ## Content conventions
 
-- Pages: Home, Members (one page: PI, PhD cards, visiting PhD, Master's and undergraduate tables, alumni), Publications, Projects (Current: HPC Security plus per-PhD slots; Published: one page per finished project, AutoPYara first), Funding, News, Join us.
+- Pages: Home, Members (one page: PI, PhD cards, visiting PhD, Master's and undergraduate tables, alumni), Publications, Projects (Current: HPC Security plus per-PhD slots; Published: a card and nav entry per finished project that link straight to the project's own site, AutoPYara first (https://botacin-s-lab.github.io/AutoPYaraPyPI/)), Funding, News, Join us.
 - The layout follows https://t3slab.github.io/ (mono labels, key-facts row, stats row, PI block, ruled rows for publications and news); colours and fonts are the Material indigo/teal theme, not theirs.
 - `docs/index.md` reuses the newest rows of `docs/publications/index.md` and `docs/news/index.md` through snippet markers (`<!-- --8<-- [start:latest] -->` ... `[end:latest]`). Keep the newest entries inside those markers, and use absolute URLs for internal links inside marked rows, because MkDocs rewrites relative links against the including page.
 - `docs/javascripts/members.js` adds the search box filter and the per-section counts on the Members page; it runs via `document$` because of instant navigation.

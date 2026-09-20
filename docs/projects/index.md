@@ -15,7 +15,7 @@ What the lab is working on now: the funded [HPC Security](hpc-security.md) proje
 
 <div markdown>
 ### :material-package-variant-closed: Published projects
-Finished work with code, data and papers you can use today, starting with [AutoPYara](published/autopyara.md).
+Finished work with code, data and papers you can use today, starting with [AutoPYara](https://botacin-s-lab.github.io/AutoPYaraPyPI/).
 
 [Published projects :material-arrow-right:](published/index.md)
 </div>
