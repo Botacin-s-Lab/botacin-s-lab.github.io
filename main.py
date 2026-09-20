@@ -270,15 +270,8 @@ def define_env(env):
         return "\n".join(out)
 
     @env.macro
-    def published_cards():
-        out = []
-        for p in published:
-            icon = p.get("icon", ":material-package-variant-closed:")
-            out.append(
-                f'<div markdown>\n'
-                f'### {icon} {p["name"]}\n'
-                f'{p["summary"]}\n\n'
-                f'[{p["name"]} :material-arrow-right:]({p["url"]})\n'
-                f"</div>\n"
-            )
-        return '<div class="feature-grid" markdown>\n\n' + "\n".join(out) + "\n</div>\n"
+    def published_list():
+        """A plain list: linked name and a one-line summary per project."""
+        return "\n".join(
+            f'- **[{p["name"]}]({p["url"]})**: {p["summary"]}' for p in published
+        ) + "\n"

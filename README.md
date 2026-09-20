@@ -140,13 +140,12 @@ Leave `title` and `summary` empty and the page shows a "to be filled in" placeho
 
 ### Published projects
 
-Add an entry to [`data/projects/published.yml`](data/projects/published.yml). It becomes a card that links straight to the project's own site or repository:
+Add an entry to [`data/projects/published.yml`](data/projects/published.yml). It becomes a line in the Published projects list that links straight to the project's own site or repository:
 
 ```yaml
 - name: ProjectName
   url: https://github.com/Botacin-s-Lab/ProjectName     # or the project's docs site
   summary: "One or two sentences about what it does."
-  icon: ":material-radar:"                              # optional icon
 ```
 
 ### Text pages

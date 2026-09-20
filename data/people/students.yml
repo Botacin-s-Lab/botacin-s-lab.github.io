@@ -8,6 +8,7 @@
 
 masters:
  current:
+  - {name: "Ashwin Menon", role: "MSc", term: "", notes: ""}
   - {name: "Yash Phatak", role: "MSc, directed studies", term: "Spring 2026", notes: "Earlier: project-based, Fall 2023 to Fall 2025"}
   - {name: "Sahil Kaushal", role: "MSc thesis", term: "Fall 2026", notes: "Hardware performance counters. Directed studies Spring 2026."}
   - {name: "Seong Jin Ahn", role: "MSc thesis", term: "Spring 2026", notes: "User fingerprinting"}

@@ -1,12 +1,10 @@
-# Finished projects with public code, data and a paper. Each entry becomes a card
+# Finished projects with public code, data and a paper. Each entry becomes a line
 # on the Published projects page and links straight to the project's own site or repo.
 #
 #   - name: ProjectName                # required
 #     url: https://...                 # required: project site or repository
 #     summary: "One or two sentences." # required
-#     icon: ":material-radar:"         # optional, any Material or Font Awesome icon shortcode
 
 - name: AutoPYara
   url: https://botacin-s-lab.github.io/AutoPYaraPyPI/
-  summary: "Automatic YARA rule generation for whole malware families. Opens the AutoPYara documentation site, which links the Python package, Java backend, artifact and evaluation data."
-  icon: ":material-radar:"
+  summary: "Automatic YARA rule generation for whole malware families. Python package, Java backend, reproducibility artifact and evaluation data."
