@@ -6,6 +6,6 @@
 _About: to be added._ <!-- TODO(student): add bio, photo, links -->
 
 <div class="member-links" markdown>
-[:material-web: Website](#) · [:fontawesome-brands-github: GitHub](#) · [:material-school: Scholar](#)
+[:fontawesome-brands-github: GitHub](https://github.com/edengarza) · [:fontawesome-brands-linkedin: LinkedIn](https://www.linkedin.com/in/edengarza)
 </div>
 </div>
