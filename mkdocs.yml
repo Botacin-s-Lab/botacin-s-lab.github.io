@@ -11,13 +11,12 @@ nav:
   - Home: index.md
   - Members: members/index.md
   - Publications: publications/index.md
+  - Talks: talks/index.md
   - Projects:
       - projects/index.md
       - Current projects: projects/current.md
       - HPC Security: projects/hpc-security.md
-      - Published projects:
-          - projects/published/index.md
-          - AutoPYara: https://botacin-s-lab.github.io/AutoPYaraPyPI/
+      - Published projects: projects/published/index.md
   - Funding: funding/index.md
   - News: news/index.md
   - Join us: join.md
@@ -66,6 +65,16 @@ extra_css:
 extra_javascript:
   - javascripts/members.js
 
+# Pages are templates: main.py turns the YAML files in data/ into rows and
+# cards. Editing data/ while `mkdocs serve` runs rebuilds the site.
+plugins:
+  - search
+  - macros
+
+watch:
+  - data
+  - main.py
+
 markdown_extensions:
   - attr_list
   - md_in_html
@@ -75,12 +84,6 @@ markdown_extensions:
       permalink: true
   - pymdownx.highlight
   - pymdownx.superfences
-  - pymdownx.snippets:
-      # Member cards and per-student project blocks live in cards/ (outside
-      # docs/) so each person edits exactly one small file. A missing file
-      # fails the build instead of silently rendering nothing.
-      base_path: ["."]
-      check_paths: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg

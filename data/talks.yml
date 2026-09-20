@@ -1,0 +1,77 @@
+# Talks and presentations by anyone in the lab. Order does not matter; the page sorts by date.
+#
+#   - date: 2026-09-16                    # required, YYYY-MM-DD (day optional: 2026-09)
+#     title: "Talk title"                 # required
+#     venue: "Conference or seminar"      # required
+#     speaker: "Name"                     # required
+#     type: talk                          # optional: talk, invited talk, poster, tutorial, defense...
+#     links:                              # optional; any label works
+#       slides: https://...
+#       video: https://youtu.be/...
+#       paper: https://...
+
+- date: 2026-09-16
+  title: "You Can See Me but You Can't Track Me: Evading Behavioral Detection with Distributed Malware and Covert Synchronization Channels"
+  venue: "Cyber Security Conference (CYBR.SEC.CON), USA"
+  speaker: "Marcus Botacin"
+  type: "talk"
+- date: 2026-08-04
+  title: "Malware Analysis & Detection Research: A Journey Across Time, Space, Hardware, and Software"
+  venue: "Seminar, George Mason University ECE, USA"
+  speaker: "Marcus Botacin"
+  type: "invited talk"
+- date: 2025-10-29
+  title: "Malware Detection under Concept Drift: Science and Engineering"
+  venue: "CERIAS Seminar, Purdue University, USA"
+  speaker: "Marcus Botacin"
+  type: "invited talk"
+- date: 2025-09-30
+  title: "Hardware is the New Software: The Next-Gen AntiViruses and how your hardware will self-secure your system!"
+  venue: "Houston Security Conference (HOU.SEC.CON), USA"
+  speaker: "Marcus Botacin"
+  type: "talk"
+- date: 2024-09-23
+  title: "GPThreats: Fully-automated AI-generated malware and its security risks"
+  venue: "Houston Security Conference (HOU.SEC.CON), USA"
+  speaker: "Marcus Botacin"
+  type: "talk"
+- date: 2024-09-20
+  title: "Research @ Botacin's Lab"
+  venue: "Global CyberSecurity Research Institute (GCRI), USA"
+  speaker: "Marcus Botacin"
+  type: "talk"
+- date: 2024-07-17
+  title: "Pilares da Segurança e Chaves criptográficas (in Portuguese)"
+  venue: "InfraRede, Brazilian Internet Committee (NIC.br), Brazil"
+  speaker: "Marcus Botacin"
+  type: "talk"
+- date: 2024-04-17
+  title: "Machine Learning By Examples"
+  venue: "Texas A&M University, USA"
+  speaker: "Marcus Botacin"
+  type: "talk"
+- date: 2023-04-20
+  title: "All You Always Wanted to Know About Antiviruses"
+  venue: "Hack In The Box (HITB) Security Conference, Amsterdam"
+  speaker: "Marcus Botacin"
+  type: "talk"
+- date: 2023-01-25
+  title: "Why Is Our Security Research Failing? Five Practices to Change!"
+  venue: "USENIX Enigma, USA"
+  speaker: "Marcus Botacin"
+  type: "talk"
+- date: 2021-12-13
+  title: "PhD thesis defense"
+  venue: "Federal University of Paraná (UFPR), Brazil"
+  speaker: "Marcus Botacin"
+  type: "defense"
+- date: 2021-02-03
+  title: "Does Your Threat Model Consider Country and Culture?"
+  venue: "USENIX Enigma, USA"
+  speaker: "Marcus Botacin"
+  type: "talk"
+- date: 2019-08-03
+  title: "Malicious Linux Binaries: A Landscape"
+  venue: "Linux Developer Conference Brazil"
+  speaker: "Marcus Botacin"
+  type: "talk"

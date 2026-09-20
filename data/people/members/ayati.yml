@@ -1,0 +1,32 @@
+# One file per person shown as a card on the Members page (PI, PhD students, visiting PhD).
+# Copy this file, rename it (e.g. jane-doe.yml), and edit. To update yourself, edit YOUR file only.
+#
+#   name: Jane Doe                  # required
+#   group: phd                      # required: pi, phd or visiting
+#   role: PhD student               # required
+#   since: since Fall 2025          # optional, shown after the role
+#   order: 6                        # optional, cards sort by this number (default 100), then by name
+#   photo: jane-doe.jpg             # optional: file you put in docs/assets/people/ (square-ish, ~600px)
+#   bio: "One or two sentences about your research."   # optional, Markdown allowed
+#   links:                          # optional; keep only the ones you have
+#     website: https://...
+#     github: https://github.com/...
+#     scholar: https://scholar.google.com/...
+#     linkedin: https://www.linkedin.com/in/...
+#     email: you@tamu.edu
+#     twitter: https://x.com/...
+#     orcid: https://orcid.org/...
+#     cv: https://...
+
+name: "Seyyed Ali Ayati"
+group: "phd"
+role: "PhD student"
+since: "since Fall 2023"
+order: 1
+photo: "seyyed-ali-ayati.jpg"
+bio: "Proactive malware prevention and scalable security analysis, including Windows EDR systems and kernel-mode security. Lead author of the WOOT 2025 paper on acoustic side-channel attacks on keyboards."
+links:
+  website: "https://ali-ayati.com/"
+  github: "https://github.com/cpt9m0"
+  scholar: "https://scholar.google.com/citations?user=umACieAAAAAJ&hl=en"
+  linkedin: "https://www.linkedin.com/in/aliayati/"

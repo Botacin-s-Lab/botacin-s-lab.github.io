@@ -1,0 +1,16 @@
+# What you are working on now. One file per PhD student; edit only your own.
+# Leave title and summary empty until you have something to say; the page then
+# shows a "to be filled in" placeholder. When the project is public and has a paper,
+# move it to data/projects/published.yml and delete it from here.
+#
+#   owner: Jane Doe
+#   title: "Short project title"
+#   summary: "Two or three sentences: the problem, the approach, where it stands."
+#   links:                        # optional
+#     code: https://github.com/...
+#     paper: https://...
+#     data: https://...
+
+owner: "Mabon Ninan"
+title: ""
+summary: ""

@@ -1,0 +1,32 @@
+name: Check Site
+
+# Builds the site on every pull request so a typo in a data file is caught
+# before it reaches main. The build uses --strict: broken links, missing photos
+# and malformed YAML all fail with a message naming the file and entry.
+on:
+  pull_request:
+    paths:
+      - "docs/**"
+      - "data/**"
+      - "main.py"
+      - "mkdocs.yml"
+      - ".github/workflows/**"
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r docs/requirements.txt
+
+      - name: Build site
+        run: mkdocs build --strict --site-dir _site

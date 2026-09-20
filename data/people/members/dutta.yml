@@ -1,0 +1,30 @@
+# One file per person shown as a card on the Members page (PI, PhD students, visiting PhD).
+# Copy this file, rename it (e.g. jane-doe.yml), and edit. To update yourself, edit YOUR file only.
+#
+#   name: Jane Doe                  # required
+#   group: phd                      # required: pi, phd or visiting
+#   role: PhD student               # required
+#   since: since Fall 2025          # optional, shown after the role
+#   order: 6                        # optional, cards sort by this number (default 100), then by name
+#   photo: jane-doe.jpg             # optional: file you put in docs/assets/people/ (square-ish, ~600px)
+#   bio: "One or two sentences about your research."   # optional, Markdown allowed
+#   links:                          # optional; keep only the ones you have
+#     website: https://...
+#     github: https://github.com/...
+#     scholar: https://scholar.google.com/...
+#     linkedin: https://www.linkedin.com/in/...
+#     email: you@tamu.edu
+#     twitter: https://x.com/...
+#     orcid: https://orcid.org/...
+#     cv: https://...
+
+name: "Soumyajyoti Dutta"
+group: "phd"
+role: "PhD student"
+since: "since 2024"
+order: 2
+bio: "LLM post-training and evaluation, agentic and RAG systems, and applied ML for cyberdefense, including automated threat-detection rule generation."
+links:
+  website: "https://xoumyax.github.io/"
+  github: "https://github.com/xoumyax"
+  linkedin: "https://www.linkedin.com/in/soumyajyotidutta/"

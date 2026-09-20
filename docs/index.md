@@ -136,7 +136,7 @@ Formal definitions of malware, theories of maliciousness, evaluation metrics, ma
 [All publications :material-arrow-right:](publications/index.md){ .more }
 </div>
 
---8<-- "docs/publications/index.md:latest"
+{{ pub_rows(publications[:4], ids=False) }}
 
 <div class="section-head" markdown>
 <div markdown>
@@ -148,7 +148,7 @@ Formal definitions of malware, theories of maliciousness, evaluation metrics, ma
 [All news :material-arrow-right:](news/index.md){ .more }
 </div>
 
---8<-- "docs/news/index.md:latest"
+{{ news_rows(news[:5]) }}
 
 <div class="section-head" markdown>
 <div markdown>

@@ -27,7 +27,7 @@ Undergraduate researchers are welcome, including voluntary positions.
 
 ## Contact
 
-Email **[botacin@tamu.edu](mailto:botacin@tamu.edu)** and tell us what you want to work on. A short note about the research areas from the [home page](index.md#what-we-do) that interest you helps.
+Email **[botacin@tamu.edu](mailto:botacin@tamu.edu)** and tell us what you want to work on. A short note about the research areas from the [home page](index.md#research-areas) that interest you helps.
 
 !!! warning "Official contact only"
     The lab does not recruit by non-Texas A&M email or by WhatsApp. Inquiries should come through Texas A&M channels.

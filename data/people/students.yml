@@ -1,0 +1,65 @@
+# Master's, undergraduate and alumni lists. One line per person.
+# To add someone, copy a line in the right section and edit it:
+#
+#   - {name: "Jane Doe", role: "MSc thesis", term: "Fall 2026", notes: "Topic, or [a paper](https://...)"}
+#
+# name and role are required; term and notes are optional. When someone finishes,
+# move their line from "current" to "previous" (or "graduated").
+
+masters:
+ current:
+  - {name: "Yash Phatak", role: "MSc, directed studies", term: "Spring 2026", notes: "Earlier: project-based, Fall 2023 to Fall 2025"}
+  - {name: "Sahil Kaushal", role: "MSc thesis", term: "Fall 2026", notes: "Hardware performance counters. Directed studies Spring 2026."}
+  - {name: "Seong Jin Ahn", role: "MSc thesis", term: "Spring 2026", notes: "User fingerprinting"}
+  - {name: "Quan Nguyen", role: "MSc thesis", term: "Fall 2026", notes: "Stream-based rule generation"}
+  - {name: "Eshan Kelkar", role: "MSc, directed studies", term: "Spring 2026", notes: ""}
+  - {name: "Aditya Gourishetty", role: "MSc, directed studies", term: "Spring 2026", notes: ""}
+ graduated:
+  - {name: "Nhat Nguyen", role: "MSc", term: "Spring 2025", notes: "*AutoPYara: A Python/Java Framework for automatic YARA rule generation using semi-supervised clustering.* Co-first author of [AutoPYara](https://botacin-s-lab.github.io/AutoPYaraPyPI/) (ACSAC 2026)."}
+ previous:
+  - {name: "Bhavan Dondapati", role: "MSc, project-based", term: "Aug 2023 to Spring 2025", notes: "[When GANs meet LLMs](https://botacin-s-lab.github.io/publications/#2026) (TAISAP 2026)"}
+  - {name: "Sidharth Anil", role: "MSc, project-based", term: "May 2023 to Jun 2024", notes: "[AutoPYara](https://botacin-s-lab.github.io/AutoPYaraPyPI/) (ACSAC 2026)"}
+  - {name: "Akshat Punjabi", role: "MSc, project-based", term: "Oct 2023 to May 2025", notes: ""}
+  - {name: "Manoj Reddy Gurram", role: "MSc, project-based", term: "Aug 2023 to Spring 2025", notes: ""}
+  - {name: "Richa Sharma", role: "MSc, research alumni", term: "Spring 2025 to Fall 2025", notes: ""}
+  - {name: "Ayushri Jain", role: "Directed studies, alumni project", term: "Fall 2024, Spring 2025", notes: ""}
+  - {name: "Sumanth Reddy Kota", role: "MSc, directed studies", term: "Fall 2025", notes: ""}
+  - {name: "Aditya Rajiv", role: "MSc, research volunteer", term: "Fall 2025", notes: ""}
+  - {name: "Snehith Bikumandla", role: "MSc, project-based, alumni project", term: "Aug 2023, Fall 2024", notes: ""}
+  - {name: "Anushka Garg", role: "MSc, directed studies", term: "Spring 2024", notes: ""}
+  - {name: "Pranav Taukari", role: "MSc, project-based, directed studies", term: "Apr to Jun 2023, Spring 2024", notes: ""}
+  - {name: "Parul Damahe", role: "MSc, project-based", term: "Summer 2023", notes: ""}
+  - {name: "Sahil Salunkhe", role: "MSc, volunteer project-based", term: "Fall 2023 to Spring 2024", notes: ""}
+  - {name: "Mohina Ahmadi", role: "MSc, volunteer summer internship", term: "Summer to Fall 2024", notes: ""}
+  - {name: "Gaurangi Sinha", role: "PhD research experience", term: "Fall 2025", notes: ""}
+
+undergraduates:
+ current:
+  - {name: "Chinmay Mangalwedhe", role: "Honors research", term: "Spring 2026", notes: ""}
+  - {name: "Aaron Thompson", role: "Directed studies; capstone team", term: "Spring 2026", notes: "Capstone (Spring 2026) with Graham Dungan, Karl Farrar and Maxim Mouget; Prof. Botacin is project owner."}
+ previous:
+  - {name: "Jayesh Tripathi", role: "Alumni project", term: "Spring to Fall 2024", notes: "[Explainable Drift Detection and Early Retrain](https://botacin-s-lab.github.io/publications/#2025) (DIMVA 2025)"}
+  - {name: "John Ammon", role: "Project-based, NSF REU, directed studies", term: "May to Dec 2023, 2024, Spring 2025", notes: ""}
+  - {name: "Mitchell Good", role: "Directed studies", term: "Fall 2025", notes: ""}
+  - {name: "Samuel Scott", role: "Directed studies", term: "Fall 2025", notes: ""}
+  - {name: "Tushar Premanand", role: "Alumni project", term: "Fall 2024 to Spring 2025", notes: ""}
+  - {name: "Sushmita Pattanaik", role: "Alumni project", term: "Fall 2024 to Spring 2025", notes: ""}
+  - {name: "Rohan Dalvi", role: "Alumni project", term: "Spring to Fall 2024", notes: ""}
+  - {name: "Sai Akash Uppala", role: "Alumni project", term: "Fall 2024", notes: ""}
+  - {name: "Zach Smith", role: "Undergraduate research course", term: "Spring 2025", notes: ""}
+  - {name: "Fady Seha", role: "Undergraduate research course", term: "Spring 2025", notes: ""}
+  - {name: "George Demetriou", role: "Halliburton summer internship", term: "Summer 2024", notes: ""}
+  - {name: "Shrey Joshi", role: "Halliburton summer internship", term: "Summer 2024", notes: ""}
+  - {name: "Mitra Mukherjee", role: "Halliburton summer internship", term: "Summer 2025", notes: ""}
+  - {name: "Avinabh Sah", role: "Halliburton summer internship", term: "Summer 2025", notes: ""}
+
+alumni:
+ brazil:
+  - {name: "Vitor Falcão da Rocha", role: "UNICAMP", term: "2016 to 2017", notes: "Anti-forensics and malware anti-analysis"}
+  - {name: "Lucas Baganha Galante", role: "UNICAMP", term: "2017 to 2019", notes: "Linux malware and ML-based detection. Papers: [RevEngE, The AV says](https://botacin-s-lab.github.io/publications/#2019)"}
+  - {name: "Giovanni Bertão", role: "UNICAMP", term: "2017 to 2019", notes: "Large-scale malware repositories. Paper: [Application installers](https://botacin-s-lab.github.io/publications/#2020)"}
+  - {name: "Raphael Machinicki", role: "UFPR", term: "2019 to 2020", notes: "Android apps' operations analysis. Paper: [AntiViruses under the Microscope](https://botacin-s-lab.github.io/publications/#2021)"}
+  - {name: "Felipe Duarte Domingues", role: "UFPR / UNICAMP", term: "2019 to 2021", notes: "Antivirus operations. Paper: [AntiViruses under the Microscope](https://botacin-s-lab.github.io/publications/#2021)"}
+ others:
+  - {name: "Hiago Santos", role: "Visiting MSc, USP (Brazil)", term: "Summer 2025", notes: ""}
+  - {name: "Shlok Gilda", role: "PhD student, University of Florida", term: "2024 to present", notes: "Open-source software mentoring"}

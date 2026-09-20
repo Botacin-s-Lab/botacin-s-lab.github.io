@@ -1,0 +1,92 @@
+# Publications with at least one lab member as an author. NEWEST FIRST.
+# To add a paper: copy an entry below, paste it at the top of the list, edit it.
+#
+#   - year: 2026                       # required
+#     venue: ACSAC                     # required, short venue name
+#     title: "Paper title"             # required
+#     authors: "**Lab Member**, Other Author"   # required; **bold** = lab members
+#     note: "To appear."               # optional, shown after the authors
+#     tags: [malware, YARA]            # optional
+#     links:                           # optional; any label works
+#       publisher: https://doi.org/...
+#       pdf: https://...
+#       code: https://github.com/...
+#       data: https://zenodo.org/...
+#       slides: https://...
+#       video: https://youtu.be/...
+#
+# Quote any text that contains a colon (:) or starts with a special character.
+
+- year: 2026
+  venue: "ACSAC"
+  title: "AutoPYara: Next-Gen YARA Rule Generator for Malware Family Clustering"
+  authors: "**Mabon Ninan**\\*, **Nhat Minh Nguyen**\\*, **Soumyajyoti Dutta**, **Sidharth Anil**, Marcus Botacin."
+  note: "\\*Equal contribution. To appear."
+  tags: ["YARA", "clustering"]
+  links:
+    docs: https://botacin-s-lab.github.io/AutoPYaraPyPI/
+    code: https://github.com/Botacin-s-Lab/AutoPYara
+    data: https://doi.org/10.5281/zenodo.22665898
+
+- year: 2026
+  venue: "TAISAP"
+  title: "When GANs meet LLMs: Bridging the Feature-Problem space gap for efficient adversarial ML-based malware generation"
+  authors: "**Dondapati** et al."
+  tags: ["adversarial ML", "malware generation"]
+  links:
+    publisher: https://dl.acm.org/doi/10.1145/3816733
+    pdf: https://marcusbotacin.github.io/files/gan-gpt.pdf
+    code: https://github.com/marcusbotacin/Automated.Malware.Generation
+
+- year: 2025
+  venue: "USENIX WOOT"
+  title: "Making Acoustic Side-Channel Attacks on Noisy Keyboards Viable with LLM-Assisted Spectrograms Typo Correction"
+  authors: "**Ayati** et al."
+  tags: ["side channels", "LLM"]
+  links:
+    publisher: https://www.usenix.org/conference/woot25/presentation/ayati
+    pdf: https://www.usenix.org/system/files/woot25-ayati.pdf
+    slides: https://www.usenix.org/sites/default/files/conference/protected-files/woot25_slides_ayati.pdf
+    arXiv: https://arxiv.org/abs/2504.11622
+    video: https://www.youtube.com/watch?v=HyrpQjZ0T8w
+
+- year: 2025
+  venue: "DIMVA"
+  title: "Towards Explainable Drift Detection and Early Retrain in ML-Based Malware Detection Pipelines"
+  authors: "**Jayesh Tripathi**, Heitor Gomes, Marcus Botacin."
+  tags: ["concept drift", "explainability"]
+  links:
+    publisher: https://link.springer.com/chapter/10.1007/978-3-031-97623-0_1
+    pdf: https://marcusbotacin.github.io/files/dimva_drift.pdf
+
+- year: 2021
+  venue: "Computers & Security"
+  title: "AntiViruses under the Microscope: A Hands-On Perspective"
+  authors: "Marcus Botacin, **Felipe Duarte Domingues**, Fabrício Ceschin, **Raphael Machnicki**, Marco Antonio Zanata Alves, Paulo Lício de Geus, André Grégio."
+  tags: ["antivirus", "advised in Brazil"]
+  links:
+    publisher: https://www.sciencedirect.com/science/article/pii/S0167404821003242
+
+- year: 2020
+  venue: "DIMVA"
+  title: "On the Security of Application Installers and Online Software Repositories"
+  authors: "Marcus Botacin, **Giovanni Bertão**, Paulo de Geus, André Grégio, Christopher Kruegel, Giovanni Vigna."
+  tags: ["software supply chain", "advised in Brazil"]
+  links:
+    publisher: https://link.springer.com/chapter/10.1007/978-3-030-52683-2_10
+
+- year: 2019
+  venue: "ACM ROOTS"
+  title: "RevEngE is a Dish Served Cold: Debug-Oriented Malware Decompilation and Reassembly"
+  authors: "Marcus Botacin, **Lucas Galante**, Paulo de Geus, André Grégio."
+  tags: ["reverse engineering", "advised in Brazil"]
+  links:
+    publisher: https://dl.acm.org/doi/10.1145/3375894.3375895
+
+- year: 2019
+  venue: "IEEE ReCoSoC"
+  title: "The AV says: Your hardware definitions were updated!"
+  authors: "Marcus Botacin, **Lucas Galante**, Fabrício Ceschin, Paulo C. Santos, Luigi Carro, Paulo de Geus, André Grégio, Marco A. Z. Alves."
+  tags: ["hardware", "advised in Brazil"]
+  links:
+    publisher: https://ieeexplore.ieee.org/document/9034972

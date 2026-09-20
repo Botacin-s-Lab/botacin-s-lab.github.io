@@ -377,8 +377,21 @@
 }
 
 @media (max-width: 40em) {
-  .lab-hero h1 { font-size: 2.4rem; }
+  .lab-hero { padding: 1.4rem 0 0.6rem; }
+  .lab-hero h1 { font-size: 2.1rem; }
+  .lab-hero .hero-headline { font-size: 1.2rem; margin-top: 1.1rem; }
+  .lab-hero .hero-text { font-size: 0.85rem; }
+  .lab-hero .md-button { display: block; margin: 0.4rem auto; max-width: 16rem; }
+  .info-row { grid-template-columns: 1fr 1fr; gap: 0.9rem; }
   .pi-block { grid-template-columns: 1fr; }
+  .pi-block img.pi-photo { width: 100%; max-width: 240px; height: auto; aspect-ratio: 3 / 4; }
   .area-grid { grid-template-columns: 1fr; }
+  .section-head { flex-wrap: wrap; margin-top: 2.2rem; }
+  .pub-row { grid-template-columns: 1fr; gap: 0.5rem; }
+  .pub-meta { display: flex; gap: 0.7rem; align-items: baseline; }
+  .pub-meta .pub-year, .pub-meta .mono-label { display: inline-block; }
+  .pub-links { grid-column: auto; justify-content: flex-start; max-width: none; }
   .news-row { grid-template-columns: 1fr; gap: 0.2rem; }
+  .member-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .member-card img.member-photo { max-width: none; }
 }
