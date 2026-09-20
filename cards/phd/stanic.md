@@ -1,5 +1,5 @@
 <div class="member-card" markdown>
-![Photo of Uros Stanic](../assets/people/placeholder.svg){ .member-photo }
+![Photo of Uros Stanic](../assets/people/uros-stanic.jpg){ .member-photo }
 ### Uros Stanic
 <span class="member-role">PhD student · since Spring 2025</span>
 
