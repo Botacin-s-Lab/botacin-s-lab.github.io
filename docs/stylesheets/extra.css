@@ -315,3 +315,39 @@
   color: var(--md-accent-fg-color);
   border-color: var(--md-accent-fg-color);
 }
+
+/* "About the PI" block on the landing page. */
+.pi-card {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 1.6rem;
+  align-items: start;
+  padding: 1.4rem;
+  margin: 1rem 0 1.5rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.8rem;
+}
+
+.pi-card .pi-photo img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.pi-card h3 {
+  margin-top: 0;
+}
+
+@media (max-width: 40em) {
+  .pi-card { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+}
+
+/* Three even columns (two rows of three) on wide screens. */
+.feature-grid.cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 60em) {
+  .feature-grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+}
