@@ -6,6 +6,6 @@
 I work on machine learning and algorithms for cybersecurity.
 
 <div class="member-links" markdown>
-[:material-web: Website](https://ninanmm.github.io) · [:fontawesome-brands-github: GitHub](https://github.com/ninanmm) · [:material-school: Scholar](https://scholar.google.com/citations?user=Zjv26VEAAAAJ)
+[:material-web: Website](https://ninanmm.github.io) · [:fontawesome-brands-github: GitHub](https://github.com/ninanmm) · [:material-school: Scholar](https://scholar.google.com/citations?user=Zjv26VEAAAAJ) · [:fontawesome-brands-linkedin: LinkedIn](https://www.linkedin.com/in/ninanmm/)
 </div>
 </div>

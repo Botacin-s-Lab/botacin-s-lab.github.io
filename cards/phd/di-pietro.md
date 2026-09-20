@@ -6,6 +6,6 @@
 Malware analysis, process injection in Windows, API hashing and behavioral analysis of malware.
 
 <div class="member-links" markdown>
-[:material-web: Website](#) · [:fontawesome-brands-github: GitHub](#) · [:material-school: Scholar](https://scholar.google.com/citations?hl=en&user=awZNP5QAAAAJ)
+[:material-school: Scholar](https://scholar.google.com/citations?hl=en&user=awZNP5QAAAAJ) · [:fontawesome-brands-linkedin: LinkedIn](https://www.linkedin.com/in/giorgia-dp/)
 </div>
 </div>
