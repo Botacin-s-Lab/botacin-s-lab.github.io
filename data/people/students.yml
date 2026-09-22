@@ -36,6 +36,7 @@ masters:
 
 undergraduates:
  current:
+  - {name: "Arnav Karekar", role: "BS Computer Science, 3rd year", term: "Spring 2026 to present", notes: "Concept drift in Android malware. Supervised by Mabon Ninan and Marcus Botacin. [Website](https://arnavkarekar.com/) · [LinkedIn](https://www.linkedin.com/in/arnavnkarekar/)"}
   - {name: "Chinmay Mangalwedhe", role: "Honors research", term: "Spring 2026", notes: ""}
   - {name: "Aaron Thompson", role: "Directed studies; capstone team", term: "Spring 2026", notes: "Capstone (Spring 2026) with Graham Dungan, Karl Farrar and Maxim Mouget; Prof. Botacin is project owner."}
  previous:
