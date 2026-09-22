@@ -1,0 +1,29 @@
+# One file per person shown as a card on the Members page (PI, PhD students, visiting PhD).
+# Copy this file, rename it (e.g. jane-doe.yml), and edit. To update yourself, edit YOUR file only.
+#
+#   name: Jane Doe                  # required
+#   group: phd                      # required: pi, phd or visiting
+#   role: PhD student               # required
+#   since: since Fall 2025          # optional, shown after the role
+#   order: 6                        # optional, cards sort by this number (default 100), then by name
+#   photo: jane-doe.jpg             # optional: file you put in docs/assets/people/ (square-ish, ~600px)
+#   bio: "One or two sentences about your research."   # optional, Markdown allowed
+#   links:                          # optional; keep only the ones you have
+#     website: https://...
+#     github: https://github.com/...
+#     scholar: https://scholar.google.com/...
+#     linkedin: https://www.linkedin.com/in/...
+#     email: you@tamu.edu
+#     twitter: https://x.com/...
+#     orcid: https://orcid.org/...
+#     cv: https://...
+
+name: "Jorge Pires Correia"
+group: "visiting"
+role: "Visiting PhD student · Federal University of Paraná (UFPR)"
+since: "since August 2026"
+order: 9
+photo: "jorge-pires-correia.jpg"
+bio: "Design and implementation of operating systems, with a focus on security. Advised by Marcus Botacin and [André Grégio](https://sites.google.com/view/andregregio/)."
+links:
+  website: "https://www.inf.ufpr.br/jpcorreia/"
