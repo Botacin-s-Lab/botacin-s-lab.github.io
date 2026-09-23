@@ -24,6 +24,8 @@ role: "PhD student"
 since: "since Fall 2024"
 order: 3
 photo: "eden-garza.jpg"
+bio: "Systems and security research focused on low-overhead, hardware-assisted malware detection. Currently developing a scalable software emulation framework to evaluate unconstrained Hardware Performance Counters (HPCs) for next-generation cyber defense."
 links:
   github: "https://github.com/edengarza"
   linkedin: "https://www.linkedin.com/in/edengarza"
+  orcid: "https://orcid.org/0009-0006-7352-1263"
