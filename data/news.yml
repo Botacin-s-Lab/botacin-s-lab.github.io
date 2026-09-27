@@ -5,6 +5,8 @@
 #
 # The home page shows the newest 5 items; the News page shows all of them.
 
+- date: "2026-09-26"
+  text: "The lab travels to Dallas for the Texas Security Workshop (TSW), with Eden Garza, Uros Stanic, Soumyajyoti Dutta, Yash Phatak, Mabon Ninan, Ashwin Menon and Jorge Pires Correia attending. Seyyed Ali Ayati wins the Best Presentation Award, and MSc students Rufus Thomas, Poyi Ou, Yuki Kanenobu and Hasan Raza win the LLM CTF."
 - date: "2026-09-16"
   text: "Prof. Botacin presents *You Can See Me but You Can't Track Me: Evading Behavioral Detection with Distributed Malware and Covert Synchronization Channels* at CYBR.SEC.CON."
 - date: "2026-08-04"
