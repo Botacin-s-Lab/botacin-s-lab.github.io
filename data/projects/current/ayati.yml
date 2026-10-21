@@ -12,5 +12,5 @@
 #     data: https://...
 
 owner: "Seyyed Ali Ayati"
-title: ""
-summary: ""
+title: "Towards Automated Behavioral Access-Control Rule Generation"
+summary: "Generating behavioral access-control policies from execution provenance graphs, so malware is blocked before it runs rather than detected afterwards. The approach combines Windows kernel-mode instrumentation and EDR tooling with large-scale trace analysis, and is evaluated on real-world benign and malicious software: on 12,000 held-out samples, 20 mined rules block 63.87% of malware executions at 0.86% false positives. This work is the core of my PhD thesis, 'Access Control Is All You Need'."
