@@ -24,9 +24,12 @@ role: "PhD student"
 since: "since Fall 2023"
 order: 1
 photo: "seyyed-ali-ayati.jpg"
-bio: "Proactive malware prevention and scalable security analysis, including Windows EDR systems and kernel-mode security. Lead author of the WOOT 2025 paper on acoustic side-channel attacks on keyboards."
+bio: "Systems security researcher working on automated behavioral access-control policy generation from execution provenance graphs, proactive malware prevention, and scalable security analysis, including Windows EDR systems with kernel-mode drivers. Lead author of the USENIX WOOT 2025 paper on acoustic side-channel attacks on keyboards; won the Best Presentation Award at the Texas Security Workshop 2026."
 links:
   website: "https://ali-ayati.com/"
   github: "https://github.com/cpt9m0"
   scholar: "https://scholar.google.com/citations?user=umACieAAAAAJ&hl=en"
   linkedin: "https://www.linkedin.com/in/aliayati/"
+  email: "ali.a@tamu.edu"
+  twitter: "https://twitter.com/itayaila"
+  cv: "https://ali-ayati.com/files/resume.pdf"
